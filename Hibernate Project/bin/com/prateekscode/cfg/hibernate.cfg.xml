@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- import dtd rules --> 
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+	<!-- writing the 'hibernate' in below statements is optional  -->
+	<!-- Loading the driver is optional from jdbc 4 and java 8 -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hb_demo</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">prateek</property>
+		
+	<!-- use to see the backend writing format of queries by hibernate. -->	
+	 	<!--<property name="hibernate.format_sql">true</property> -->
+ 		<property name="show_sql">true</property>
+
+	<!-- attaching hibernate mapping file -->
+		<mapping resource="com/prateekscode/entity/Product.hbm.xml"/>
+	
+	</session-factory>
+</hibernate-configuration>
