@@ -2,6 +2,7 @@ package com.practice;
 
 public class Abstra {
 	    public static void main(String[] args) {
+	    	
 	    VV ref=new YY(10,20);
 	    ref.show();
 	    VV.m1();
@@ -18,7 +19,6 @@ public class Abstra {
 	abstract class VV{ 
 	    int a;
 	    static String name="RAJ";
-	    
 	    
 	    VV(int a){
 	        
@@ -52,12 +52,12 @@ public class Abstra {
 	    }
 	    
 	    void m2() {
-	        System.out.println("m2()-----YY");
+	        System.out.println("m2()-----VV");
 	    }
 
 	    
 	    void m3() {
 	        
-	        System.out.println("m3()-----YY");
+	        System.out.println("m3()-----VV");
 	    }
 	}
