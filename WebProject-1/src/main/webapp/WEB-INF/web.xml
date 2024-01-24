@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="4.0">
 	<display-name>WebProject-1</display-name>
 	<welcome-file-list>
-		<welcome-file>login2.html</welcome-file>
+		<welcome-file>login.html</welcome-file>
 	</welcome-file-list>
 	<servlet>
 	<servlet-name>loginServlet</servlet-name>
