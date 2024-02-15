@@ -16,7 +16,7 @@ public class OpsLab2 {
 			
 			tx=session.beginTransaction();
 			
-			Record rc=new Record("Master","Jaipur","MSt@gmail.com",11332266);
+			Record rc=new Record("Anubhav","KNP","anu@gmail.com",2334564);
 			session.save(rc);
 			
 			tx.commit();

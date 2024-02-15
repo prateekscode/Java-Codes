@@ -27,17 +27,12 @@ public class Student {
 	@CollectionOfElements
 	@JoinTable(name = "courses", joinColumns = @JoinColumn(name = "sid"))
 	@IndexColumn(name = "idx")
-	private String[] couurses;
+	private String[] courses;
 
 	@CollectionOfElements
-	@JoinTable(name = "emails", joinColumns = @JoinColumn(name = "sid"))
+	@JoinTable(name = "skills", joinColumns = @JoinColumn(name = "sid"))
 	@IndexColumn(name = "idx")
-	private List<String> emails;
-
-	@CollectionOfElements
-	@JoinTable(name = "phones", joinColumns = @JoinColumn(name = "sid"))
-	@IndexColumn(name = "idx")
-	private Set<Long> phones;
+	private List<String> skills;
 
 	@CollectionOfElements
 	@JoinTable(name = "marks", joinColumns = @JoinColumn(name = "sid"))
@@ -100,28 +95,20 @@ public class Student {
 		this.qualification = qualification;
 	}
 
-	public String[] getCouurses() {
-		return couurses;
+	public String[] getCourses() {
+		return courses;
 	}
 
-	public void setCouurses(String[] couurses) {
-		this.couurses = couurses;
+	public void setCourses(String[] couurses) {
+		this.courses = couurses;
 	}
 
-	public List<String> getEmails() {
-		return emails;
+	public List<String> getSkills() {
+		return skills;
 	}
 
-	public void setEmails(List<String> emails) {
-		this.emails = emails;
-	}
-
-	public Set<Long> getPhones() {
-		return phones;
-	}
-
-	public void setPhones(Set<Long> phones) {
-		this.phones = phones;
+	public void setSkills(List<String> skills) {
+		this.skills = skills;
 	}
 
 	public List<Integer> getMarks() {
@@ -132,12 +119,5 @@ public class Student {
 		this.marks = marks;
 	}
 
-	public Map<String, Long> getRefs() {
-		return refs;
-	}
-
-	public void setRefs(Map<String, Long> refs) {
-		this.refs = refs;
-	}
 
 }
