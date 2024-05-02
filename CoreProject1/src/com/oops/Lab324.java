@@ -6,7 +6,7 @@ public class Lab324 {
 		B2 n=new B2();
 		System.out.println(n.a);
 //		b cannot be resolved or is not a field
-//		System.out.println(n.b);
+		System.out.println(n.b);
 		System.out.println("-------");
 		D2 n1=new D2();
 		System.out.println(n1.a);
